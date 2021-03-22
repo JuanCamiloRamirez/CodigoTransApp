@@ -5,18 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/grdnt"
-    tools:context=".MainActivity">
+    tools:context=".SingInActivity">
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="251dp"
-        android:layout_height="221dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.050000012"
-        app:srcCompat="@drawable/logo" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -105,17 +95,30 @@
             android:letterSpacing="0.2"
             android:padding="16dp"
             android:text="Acceder"
+            android:onClick="acceder"
             android:textColor="#d9e5f3"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/inscribirse"
+            android:onClick="registro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:letterSpacing="0.1"
             android:text="Crear una  cuenta? Inscribirse"
             android:textColor="#d9e5f3" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="300dp">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

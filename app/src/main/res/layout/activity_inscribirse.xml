@@ -7,17 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/grdnt"
     >
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="251dp"
-        android:layout_height="221dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.050000012"
-        app:srcCompat="@drawable/logo" />
-    />
+
 <LinearLayout
 android:layout_width="match_parent"
 android:layout_height="match_parent"
@@ -177,10 +167,15 @@ android:layout_marginBottom="20dp">
         android:textColor="#d9e5f3" />
 </LinearLayout>
 <LinearLayout
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:gravity="center"
-android:layout_marginBottom="400dp">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_marginBottom="400dp">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        />
 
 </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

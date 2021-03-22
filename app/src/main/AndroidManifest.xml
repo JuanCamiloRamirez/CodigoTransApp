@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.parcial.codigotransapp">
 
     <application
@@ -9,10 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CodigoTransApp">
-        <activity
-            android:name=".ui.login.LoginActivity"
-            android:label="@string/title_activity_login"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".Menu"></activity>
+        <activity android:name=".SingupActivity" />
+        <activity android:name=".SingInActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -9,4 +9,7 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="Mis_vehiculos">Mis vehiculos</string>
+    <string name="Mis_Multas">Mis multas</string>
+    <string name="codigo_transito">Codigo transito</string>
 </resources>
