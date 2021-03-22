@@ -12,4 +12,7 @@
     <string name="Mis_vehiculos">Mis vehiculos</string>
     <string name="Mis_Multas">Mis multas</string>
     <string name="codigo_transito">Codigo transito</string>
+    <string name="datos_vehiculo">Registre su vehiculo</string>
+    <string name="digite_numero_documento">Documento propietario</string>
+    <string name="digite_placa">Digite placas vehiculo</string>
 </resources>
