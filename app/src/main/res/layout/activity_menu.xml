@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/grdnt"
-    tools:context=".Menu">
+    tools:context=".services.Menu">
 
     <Button
         android:id="@+id/bttnCodigoTrans"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/codigo_transito"
+        android:onClick="goToCodigoTransito"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,24 +21,25 @@
 
     <Button
         android:id="@+id/buttonMisVehiculos"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/Mis_vehiculos"
         android:onClick="listarVehiculo"
+        android:text="@string/Mis_vehiculos"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bttnCodigoTrans"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/bttnCodigoTrans"
         app:layout_constraintTop_toBottomOf="@+id/bttnCodigoTrans"
-        app:layout_constraintVertical_bias="0.19999999" />
+        app:layout_constraintVertical_bias="0.198" />
 
     <Button
         android:id="@+id/buttonMisMultas"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/Mis_Multas"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonMisVehiculos"
+        app:layout_constraintStart_toStartOf="@+id/buttonMisVehiculos"
         app:layout_constraintTop_toBottomOf="@+id/buttonMisVehiculos"
         app:layout_constraintVertical_bias="0.3" />
 </androidx.constraintlayout.widget.ConstraintLayout>

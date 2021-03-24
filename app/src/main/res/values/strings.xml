@@ -15,4 +15,6 @@
     <string name="datos_vehiculo">Registre su vehiculo</string>
     <string name="digite_numero_documento">Documento propietario</string>
     <string name="digite_placa">Digite placas vehiculo</string>
+    <string name="codigo_de_la_infraccion">Codigo de la infracción</string>
+    <string name="buscar_codigo_de_la_infraccion">Buscar</string>
 </resources>

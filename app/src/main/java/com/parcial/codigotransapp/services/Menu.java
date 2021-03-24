@@ -1,10 +1,12 @@
-package com.parcial.codigotransapp;
+package com.parcial.codigotransapp.services;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.parcial.codigotransapp.R;
 
 public class Menu extends AppCompatActivity {
 
@@ -16,6 +18,11 @@ public class Menu extends AppCompatActivity {
 
     public void listarVehiculo(View view) {
         Intent intent = new Intent(this,ListaVehiculo.class);
+        startActivity(intent);
+    }
+
+    public void goToCodigoTransito(View view){
+        Intent intent = new Intent(this, CodigoTransitoActivity.class);
         startActivity(intent);
     }
 }
