@@ -95,9 +95,9 @@
             android:letterSpacing="0.2"
             android:padding="16dp"
             android:text="Acceder"
-            android:onClick="acceder"
             android:textColor="#d9e5f3"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="acceder"/>
 
         <TextView
             android:id="@+id/inscribirse"
