@@ -33,7 +33,6 @@
         app:layout_constraintVertical_bias="0.198" />
 
     <Button
-        android:id="@+id/buttonMisMultas"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/Mis_Multas"

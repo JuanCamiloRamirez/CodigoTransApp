@@ -10,9 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CodigoTransApp">
-        <activity android:name=".services.CodigoTransitoActivity"></activity>
         <activity android:name=".services.RegistroVehiculoActivity" />
         <activity android:name=".services.ListaVehiculo" />
+        <activity android:name=".services.CodigoTransitoFragment" />
         <activity android:name=".services.Menu" />
         <activity android:name=".services.SingupActivity" />
         <activity android:name=".services.login.SingInActivity">

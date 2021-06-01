@@ -22,7 +22,7 @@ public class Menu extends AppCompatActivity {
     }
 
     public void goToCodigoTransito(View view){
-        Intent intent = new Intent(this, CodigoTransitoActivity.class);
+        Intent intent = new Intent(this, CodigoTransitoFragment.class);
         startActivity(intent);
     }
 }
