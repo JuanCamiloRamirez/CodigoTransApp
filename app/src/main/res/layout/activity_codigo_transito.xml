@@ -7,52 +7,62 @@
     android:background="@drawable/grdnt"
     android:layout_height="match_parent">
 
-    <ListView
-        android:id="@+id/listViewCodigos"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="122dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="14dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/listViewCodigos"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:textColor="@color/white"
+        android:layout_width="243dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
         android:ems="10"
         android:hint="Digite el codigo de transito"
-        android:textColorHint="@color/white"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/listViewCodigos"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_gallery"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/text_gallery" />
 
     <TextView
         android:id="@+id/text_gallery"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="242dp"
+        android:layout_height="47dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="10dp"
         android:text="Codigos transito"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+    <ListView
+        android:id="@+id/listViewCodigos"
+        android:layout_width="382dp"
+        android:layout_height="578dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

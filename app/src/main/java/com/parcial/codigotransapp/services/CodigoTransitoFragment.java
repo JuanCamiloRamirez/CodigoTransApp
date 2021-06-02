@@ -142,14 +142,62 @@ public class CodigoTransitoFragment extends AppCompatActivity {
         codigoTrans.add(new CodigoTrans("D-14",30,"Vehículos que usen para su movilización combustibles no regulados como gas propano u otros que pongan en peligro la vida de peatones","$ 877.800"));
         codigoTrans.add(new CodigoTrans("D-15",30,"Cambio del recorrido o trazado de la ruta para vehículo de servicio","$ 877.800"));
         codigoTrans.add(new CodigoTrans("D-16",30,"Arrojar basura o residuos sólidos al espacio público","$ 877.800"));
-        codigoTrans.add(new CodigoTrans("D-11",30,"Transitar sin los dispositivos luminosos requeridos","$ 877.800"));
-        codigoTrans.add(new CodigoTrans("D-11",30,"Transitar sin los dispositivos luminosos requeridos","$ 877.800"));
-        codigoTrans.add(new CodigoTrans("D-11",30,"Transitar sin los dispositivos luminosos requeridos","$ 877.800"));
-        codigoTrans.add(new CodigoTrans("D-11",30,"Transitar sin los dispositivos luminosos requeridos","$ 877.800"));
-        codigoTrans.add(new CodigoTrans("D-11",30,"Transitar sin los dispositivos luminosos requeridos","$ 877.800"));
-
-
-
+        codigoTrans.add(new CodigoTrans("D-17",30,"Cuando se detecte o advierta una infracción a las normas de emisión contaminante o de generación de ruido por vehículos automotores","$ 877.800"));
+        codigoTrans.add(new CodigoTrans("D-2",30,"Transitar sin portar los seguros ordenados por la ley","$ 877.800"));
+        codigoTrans.add(new CodigoTrans("D-3",30,"Transitar en sentido contrario en el estipulado en vías, carriles, etc","$ 877.800"));
+        codigoTrans.add(new CodigoTrans("D-4",30,"No detenerse ante la luz roja o amarilla en un semaforo. También señales de pare, etc.","$ 877.800"));
+        codigoTrans.add(new CodigoTrans("D-5",30,"Transitar un vehículo sobre aceras, plazas, vías peatonales, separadores, etc","$ 877.800"));
+        codigoTrans.add(new CodigoTrans("D-6",30,"Adelantar a otro vehículo en berma, túnel, puente, curva, pasos a nivel y cruces no regulados","$ 877.800"));
+        codigoTrans.add(new CodigoTrans("D-7",30,"Conducir y realizar maniobras peligrosas","$ 877.800"));
+        codigoTrans.add(new CodigoTrans("D-8",30,"Conducir un vehículo sin dispositivos de luces","$ 877.800"));
+        codigoTrans.add(new CodigoTrans("D-9",30,"No permitir ni dar paso a vehículos de emergencia","$ 877.800"));
+        codigoTrans.add(new CodigoTrans("E-1",45,"Proveer combustible con personas a bordo. Su licencia será inhabilitada por 6 meses","$ 1.316.700"));
+        codigoTrans.add(new CodigoTrans("E-2",45,"Negarse a prestar el servicio público","$ 1.316.700"));
+        codigoTrans.add(new CodigoTrans("E-4",45,"Transportar junto con más personas (Explosivos, radiactivos, tóxicos, entre otros)","$ 1.316.700"));
+        codigoTrans.add(new CodigoTrans("F",135,"Conducir en estado de embriaguez (Grado 0 y segunda reincidencia)","$ 3.950.100"));
+        codigoTrans.add(new CodigoTrans("F",1445,"Conducir en estado de embriaguez (Grado 3 y tercera reincidencia)","$ 42.134.400"));
+        codigoTrans.add(new CodigoTrans("F",1080,"Conducir en estado de embriaguez (Grado 3 y segunda reincidencia)","$ 31.600.800"));
+        codigoTrans.add(new CodigoTrans("F",720,"Conducir en estado de embriaguez (Grado 3 y primera reincidencia)","$ 21.067.200"));
+        codigoTrans.add(new CodigoTrans("F",720,"Conducir en estado de embriaguez (Grado 2 y tercera reincidencia)","$ 21.067.200"));
+        codigoTrans.add(new CodigoTrans("F",540,"Conducir en estado de embriaguez (Grado 2 y segunda reincidencia)","$ 15.800.400"));
+        codigoTrans.add(new CodigoTrans("F",360,"Conducir en estado de embriaguez (Grado 2 y primera reincidencia)","$ 10.533.600"));
+        codigoTrans.add(new CodigoTrans("F",360,"Conducir en estado de embriaguez (Grado 1 y tercera reincidencia)","$ 10.533.600"));
+        codigoTrans.add(new CodigoTrans("F",270,"Conducir en estado de embriaguez (Grado 1 y segunda reincidencia)","$ 7.900.200"));
+        codigoTrans.add(new CodigoTrans("F",90,"Conducir en estado de embriaguez (Grado 0 y primera reincidencia)","$ 2.633.400"));
+        codigoTrans.add(new CodigoTrans("F",1440,"Negarse al examen de alcoholemia","$ 42.134.400"));
+        codigoTrans.add(new CodigoTrans("F",180,"Conducir en estado de embriaguez (Grado 0 y tercera reincidencia)","$ 5.266.800"));
+        codigoTrans.add(new CodigoTrans("F",180,"Conducir en estado de embriaguez (Grado 1 y primera reincidencia)","$ 5.266.800"));
+        codigoTrans.add(new CodigoTrans("F-10",1,"Transitar por túneles, puentes, viaductos en vías férreas","$ 29.260"));
+        codigoTrans.add(new CodigoTrans("F-11",1,"En relación con el STTMP, éstos no deben ocupar la zona de seguridad y corredores de tránsito de los vehículos del STTMP","$ 29.260"));
+        codigoTrans.add(new CodigoTrans("F-12",1,"Dentro de zonas urbanas el cruce debe realizarse solo en zonas habilitadas","$ 29.260"));
+        codigoTrans.add(new CodigoTrans("F-4",1,"Colocarse delante o detrás de un vehículo con el motor encendido","$ 29.260"));
+        codigoTrans.add(new CodigoTrans("F-5",1,"Remolcarse en vehículos que tengan movimiento","$ 29.260"));
+        codigoTrans.add(new CodigoTrans("F-6",1,"Actuar de manera que ponga en peligro su integridad","$ 29.260"));
+        codigoTrans.add(new CodigoTrans("F-7",1,"Cruzar la Vía Atravesando&nbsp;&nbsp;el trafico Vehicular en lugares en donde Existen Pasos Peatonales","$ 29.260"));
+        codigoTrans.add(new CodigoTrans("F-8",1,"Ocupar la zona de seguridad y protección de la vía férrea","$ 29.260"));
+        codigoTrans.add(new CodigoTrans("F-9",1,"Subirse o bajarse de los vehículos, estando en movimiento","$ 29.260"));
+        codigoTrans.add(new CodigoTrans("G-1",0,"Pasajero que sea sorprendido fumando en un vehículo en movimiento","$ 0"));
+        codigoTrans.add(new CodigoTrans("G-2",0,"Peatones y ciclistas que no cumplan con las normativas en éste código","$ 0"));
+        codigoTrans.add(new CodigoTrans("H-1",5,"Transitar portando defensas diferentes a la instaladas originalmente","$ 146.300"));
+        codigoTrans.add(new CodigoTrans("H-10",5,"Todas las infracciones establecidas en éste código","$ 146.300"));
+        codigoTrans.add(new CodigoTrans("H-11",5,"Menores de 2 años solos en el asiento de la parte superior sin ningún tipo de seguridad","$ 146.300"));
+        codigoTrans.add(new CodigoTrans("H-12",5,"Transitar en vehículos de alto tonelaje por las vías de sitios que estén declarados o se declaren como monumentos de conservación histórica","$ 146.300"));
+        codigoTrans.add(new CodigoTrans("H-13",5,"Conductas incluidas en éste código","$ 146.300"));
+        codigoTrans.add(new CodigoTrans("H-2",5,"Conductor que al momento de transitar no porte la licencia","$ 146.300"));
+        codigoTrans.add(new CodigoTrans("H-3",5,"Conductor, pasajero o peatón, que obstaculice, perjudique o ponga en riesgo a las demás personas o que no cumpla las normas de transito","$ 146.300"));
+        codigoTrans.add(new CodigoTrans("H-4",5,"Conductor que no respete los derechos de los peatones","$ 146.300"));
+        codigoTrans.add(new CodigoTrans("H-5",5,"Conductor que no respete: Giros, intersecciones, etc","$ 146.300"));
+        codigoTrans.add(new CodigoTrans("H-6",5,"Conductor que no tome precaución de los movimientos del vehículo al estacionar","$ 146.300"));
+        codigoTrans.add(new CodigoTrans("H-7",5,"Conductor que lleve pasajeros en zonas externas del automotor","$ 146.300"));
+        codigoTrans.add(new CodigoTrans("H-8",5,"Conductor que porte las luces exploradoras en la parte superior del automotor","$ 146.300"));
+        codigoTrans.add(new CodigoTrans("H-9",5,"Pasajero que profiera expresiones injuriosas o groseras, promueva riñas o cause cualquier molestia a los demás","$ 146.300"));
+        codigoTrans.add(new CodigoTrans("I-1",10,"Conductor que sea sorprendido fumando mientras conduce","$ 292.600"));
+        codigoTrans.add(new CodigoTrans("I-2",100,"Quien incumpla la obligación consagrada en el Art. 21 de este código, y se le compruebe que en caso de un accidente la deficiencia fue su causa","$ 2.926.000"));
+        codigoTrans.add(new CodigoTrans("J-1",90,"Organismo que dañe, retire, o modifique las señales u otros elementos reguladores o indicadores del tráfico","$ 2.633.400"));
+        codigoTrans.add(new CodigoTrans("J-2",600,"Incumplimiento del compromiso suscrito por el propietario o infractor de subsanar la falta en un plazo no mayor a 5 días","$ 17.550.000"));
+        codigoTrans.add(new CodigoTrans("J-3",1000,"Cancelación de su registro, las ensambladoras o fabricantes de vehículos, carrocerías, etc","$ 146.300"));
+        codigoTrans.add(new CodigoTrans("J-4",100,"Propietario que provea de combustible a un vehículo automotor de servicio público con el motor encendido o con pasajeros a bordo","$ 2.926.000"));
+        codigoTrans.add(new CodigoTrans("J-5",1500,"Administrador de parqueadero autorizados que permitan la salida de un automotor con infracciones","$ 43.819.000"));
     }
 
 }
