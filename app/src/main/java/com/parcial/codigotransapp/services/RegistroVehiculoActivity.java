@@ -63,6 +63,7 @@ public class RegistroVehiculoActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+
     private void guardarInformacion() {
         PersonaServiceImpl personaService = new PersonaServiceImpl(this);
 
