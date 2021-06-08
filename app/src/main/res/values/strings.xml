@@ -4,8 +4,19 @@
     <string name="Mis_Multas">Mis multas</string>
     <string name="codigo_transito">Codigo transito</string>
     <string name="datos_vehiculo">Registre su vehiculo</string>
-    <string name="digite_numero_documento">Documento propietario</string>
-    <string name="digite_placa">Digite placas vehiculo</string>
+    <string name="digite_nombre_propietario">Nombre propietario</string>
+    <string name="digite_celular">Digite celular propietario</string>
+    <string name="digite_placa">Digite placa vehiculo</string>
     <string name="codigo_de_la_infraccion">Codigo de la infracción</string>
     <string name="buscar_codigo_de_la_infraccion">Buscar</string>
+    <string name="guardar">Guardar</string>
+    <string name="confirm">Confirmar</string>
+    <string name="confirm_message_guardar_informacion">¿Está seguro de guardar la información?</string>
+    <string name="confirm_action">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="seleccione">-- Seleccione --</string>
+    <string name="confirm_message_eliminar_usuario">¿Esta seguro de eliminar el usuario?</string>
+    <string name="registro_persona">Registro persona</string>
+    <string name="insertar">Insertar</string>
+
 </resources>
