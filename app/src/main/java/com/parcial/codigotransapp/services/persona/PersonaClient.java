@@ -13,6 +13,8 @@ import retrofit2.http.DELETE;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.POST;
+import retrofit2.http.PUT;
+import retrofit2.http.Path;
 
 interface PersonaClient {
        @GET("api/persona")
@@ -23,4 +25,7 @@ interface PersonaClient {
 
        @DELETE("api/persona/{id}")
        Call<CustomResponse<RespuestaPersona>> eliminar(@Header("Content-Type") String contentTypeApplicationJson, @Body Integer idPersona);
+
+       @PUT("v1/persona/{idPersona}")
+       Call<CustomResponse<RespuestaPersona>> actualizar(@Header("Content-Type") String contentTypeApplicationJson, @Body PersonaDTO persona, @Path("idPersona") int idPersona);
 }

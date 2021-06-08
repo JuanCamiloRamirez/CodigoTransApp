@@ -1,6 +1,7 @@
 package com.parcial.codigotransapp.services.persona;
 
 import android.content.Context;
+import android.content.Intent;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -75,6 +76,22 @@ public class PersonaServiceImpl extends RetrofitFactory {
             @Override
             public void onResponse(Call<CustomResponse<RespuestaPersona>> call, Response<CustomResponse<RespuestaPersona>> response) {
 
+            }
+
+            @Override
+            public void onFailure(Call<CustomResponse<RespuestaPersona>> call, Throwable t) {
+                Toast.makeText(getContext(), "Error de comunicación: "+ t.getMessage(), Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+    public void actualizar(PersonaDTO persona, Intent intent, Integer idPersona) {
+        Retrofit retrofit = getRetrofitInstance();
+        PersonaClient client = retrofit.create(PersonaClient.class);
+        Call<CustomResponse<RespuestaPersona>> responseCall = client.actualizar(Parametro.CONTENT_TYPE_APPLICATION_JSON, persona, idPersona);
+        responseCall.enqueue(new Callback<CustomResponse<RespuestaPersona>>() {
+            @Override
+            public void onResponse(Call<CustomResponse<RespuestaPersona>> call, Response<CustomResponse<RespuestaPersona>> response) {
+                getContext().startActivity(intent);
             }
 
             @Override

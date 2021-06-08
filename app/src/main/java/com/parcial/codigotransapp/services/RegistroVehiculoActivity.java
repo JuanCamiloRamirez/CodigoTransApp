@@ -1,5 +1,6 @@
 package com.parcial.codigotransapp.services;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -38,14 +39,13 @@ public class RegistroVehiculoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro_vehiculo);
         ButterKnife.bind(this);
+        persona = new PersonaDTO();
         personaActualizar=(Persona) getIntent().getSerializableExtra("persona");
         if(persona!=null){
             txtPlaca.setText(persona.getPlaca());
             txtNombre.setText(persona.getNombre());
             txtCelular.setText(persona.getCelular());
         }
-
-        persona = new PersonaDTO();
         ActionBarUtil.getInstance(this, false).setToolBar(getString(R.string.registro_persona), getString(R.string.insertar));
 
     }
@@ -66,12 +66,62 @@ public class RegistroVehiculoActivity extends AppCompatActivity {
 
     private void guardarInformacion() {
         PersonaServiceImpl personaService = new PersonaServiceImpl(this);
+        if (persona != null) {
 
-        persona.setPlaca(txtPlaca.getText().toString());
-        persona.setNombre(txtNombre.getText().toString());
-        persona.setCelular(txtCelular.getText().toString());
-        personaService.insertar(persona);
-        Intent intent = new Intent(RegistroVehiculoActivity.this,ListaVehiculo    .class);
-        startActivity(intent);
-    }
+            persona.setPlaca(txtPlaca.getText().toString());
+            persona.setNombre(txtNombre.getText().toString());
+            persona.setCelular(txtCelular.getText().toString());
+
+
+            //confirmar insert en la DB
+            AlertDialog.Builder builder = new AlertDialog.Builder(RegistroVehiculoActivity.this);
+
+            //ventana priorizada
+            builder.setCancelable(false);
+            builder.setTitle("Confirmar");
+            builder.setMessage("¿Esta seguro de actualizar la información?");
+            builder.setPositiveButton("Confirmar acción",
+                    (dialog, which) -> {
+                        Intent intent = new Intent(this, ListaVehiculo.class);
+                        personaService.actualizar(persona, intent, persona.getIdPersona());
+                        goToListaVehiculo();
+                    });
+            builder.setNegativeButton(android.R.string.cancel,
+                    (dialog, which) -> {
+                    });
+            AlertDialog dialog = builder.create();
+            dialog.show();
+        } else {
+            PersonaDTO nuevaPersonaDTO = new PersonaDTO();
+
+            nuevaPersonaDTO.setPlaca(txtPlaca.getText().toString());
+            nuevaPersonaDTO.setNombre(txtNombre.getText().toString());
+            nuevaPersonaDTO.setCelular(txtCelular.getText().toString());
+
+
+            //confirmar insert en la DB
+            AlertDialog.Builder builder = new AlertDialog.Builder(RegistroVehiculoActivity.this);
+
+            //ventana priorizada
+            builder.setCancelable(false);
+            builder.setTitle("Confirmar");
+            builder.setMessage("¿Esta seguro de guardar la información?");
+            builder.setPositiveButton("Confirmar acción",
+                    (dialog, which) -> {
+                        Intent intent = new Intent(this, ListaVehiculo.class);
+                        personaService.insertar(nuevaPersonaDTO);
+                        goToListaVehiculo();
+                    });
+            builder.setNegativeButton(android.R.string.cancel,
+                    (dialog, which) -> {
+                    });
+            AlertDialog dialog = builder.create();
+            dialog.show();
+           }
+        }
+
+        public void goToListaVehiculo(){
+            Intent intent = new Intent(this,ListaVehiculo.class);
+            startActivity(intent);
+        }
 }
