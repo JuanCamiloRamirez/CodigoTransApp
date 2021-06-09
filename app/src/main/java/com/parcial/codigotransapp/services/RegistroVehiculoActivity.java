@@ -39,12 +39,13 @@ public class RegistroVehiculoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro_vehiculo);
         ButterKnife.bind(this);
-        persona = new PersonaDTO();
+
         personaActualizar=(Persona) getIntent().getSerializableExtra("persona");
-        if(persona!=null){
-            txtPlaca.setText(persona.getPlaca());
-            txtNombre.setText(persona.getNombre());
-            txtCelular.setText(persona.getCelular());
+        if(personaActualizar!=null){
+
+            txtPlaca.setText(personaActualizar.getPlaca());
+            txtNombre.setText(personaActualizar.getNombre());
+            txtCelular.setText(personaActualizar.getCelular());
         }
         ActionBarUtil.getInstance(this, false).setToolBar(getString(R.string.registro_persona), getString(R.string.insertar));
 
@@ -66,8 +67,9 @@ public class RegistroVehiculoActivity extends AppCompatActivity {
 
     private void guardarInformacion() {
         PersonaServiceImpl personaService = new PersonaServiceImpl(this);
-        if (persona != null) {
-
+        if (personaActualizar != null) {
+            persona = new PersonaDTO();
+            persona.setIdPersona(personaActualizar.getIdPersona());
             persona.setPlaca(txtPlaca.getText().toString());
             persona.setNombre(txtNombre.getText().toString());
             persona.setCelular(txtCelular.getText().toString());

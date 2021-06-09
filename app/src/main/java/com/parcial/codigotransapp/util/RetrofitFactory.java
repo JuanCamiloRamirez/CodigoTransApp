@@ -1,6 +1,7 @@
 package com.parcial.codigotransapp.util;
 
 import android.content.Context;
+import android.widget.Toast;
 
 import java.util.concurrent.TimeUnit;
 
@@ -27,6 +28,10 @@ public class RetrofitFactory {
 
     protected Context getContext(){
         return context;
+    }
+
+    protected void getOnFailure(Throwable t){
+        Toast.makeText(context, "Error de comunicación: "+ t.getMessage(), Toast.LENGTH_LONG).show();
     }
 
 

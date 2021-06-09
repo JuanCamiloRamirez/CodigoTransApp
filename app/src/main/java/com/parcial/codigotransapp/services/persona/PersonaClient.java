@@ -26,6 +26,6 @@ interface PersonaClient {
        @DELETE("api/persona/{id}")
        Call<CustomResponse<RespuestaPersona>> eliminar(@Header("Content-Type") String contentTypeApplicationJson, @Body Integer idPersona);
 
-       @PUT("v1/persona/{idPersona}")
+       @PUT("api/persona/{idPersona}")
        Call<CustomResponse<RespuestaPersona>> actualizar(@Header("Content-Type") String contentTypeApplicationJson, @Body PersonaDTO persona, @Path("idPersona") int idPersona);
 }

@@ -26,6 +26,7 @@ public class PersonaAdapter extends BaseAdapter {
     private final LayoutInflater inflater;
     private Context context;
     private final List<Persona> personas;
+    private int idPersona;
 
     public PersonaAdapter(Context context, List<Persona> personas) {
         inflater = LayoutInflater.from(context);
@@ -59,15 +60,16 @@ public class PersonaAdapter extends BaseAdapter {
             holder = new ViewHolder(convertView);
             convertView.setTag(holder);
         }
+
         holder.placa.setText(personas.get(position).getPlaca());
         holder.nombre.setText(personas.get(position).getNombre());
         holder.celular.setText(personas.get(position).getCelular());
 
         View finalConvertView = convertView;
         holder.eliminarButton.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
-
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setCancelable(false);
                 builder.setTitle(R.string.confirm);
